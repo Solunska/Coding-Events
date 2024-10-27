@@ -1,0 +1,41 @@
+:root {
+    --color1: 187, 186, 244;
+    --color2: 94, 227, 247;
+    --color3: 103, 253, 179;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.itemsContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.itemsContainer li:first-child {
+    text-transform: uppercase;
+    font-family: "Bruno Ace SC", sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    background: linear-gradient(90deg, rgb(var(--color1)), rgb(var(--color2)), rgb(var(--color3)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.itemsContainer li {
+    list-style: none;
+    color: rgb(204, 204, 204);
+    display: flex;
+    gap: 1em;
+    padding-inline: 40px;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+
+.itemsContainer li:last-child {
+    background-color: rgba(85, 85, 85, 0.502);
+}
